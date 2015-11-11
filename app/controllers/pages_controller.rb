@@ -3,12 +3,14 @@ class PagesController < ApplicationController
     @parameters = params[:readthis]
   end
   def numberguess
-    @switch = params[:generate]
+    @switch = params[:switch]
     if @switch == "1"
       Randomnumber.first.update(number: rand(50))
+      
     end
+
     @number_number = Randomnumber.first.number
-    @guess = params[:number].to_i
+    @guess = params[:guess].to_i
     
 
     

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get '/', to: 'pages#parameter_page'
   get '/1', to: 'pages#numberguess'
+  get '/1/:guess', to: 'pages#numberguess'
+  get '/1/:guess/:switch', to: 'pages#numberguess'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
