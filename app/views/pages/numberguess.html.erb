@@ -1,0 +1,12 @@
+
+
+<% if @guess == @number_number %>
+  <p>you win</p>
+<% elsif @guess > @number_number %>
+  <p>lower</p>
+<% else @guess < @number_number %>
+  <p>higher</p>>
+<% end %>
+
+<%=  @guess %>
+<%= @number_number %>
